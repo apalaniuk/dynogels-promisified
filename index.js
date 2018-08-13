@@ -8,6 +8,7 @@ Promise.promisifyAll(require('dynogels/lib/item').prototype);
 Promise.promisifyAll(require('dynogels/lib/query').prototype);
 Promise.promisifyAll(require('dynogels/lib/scan').prototype);
 Promise.promisifyAll(require('dynogels/lib/parallelScan').prototype);
+Promise.promisifyAll(require('dynogels/lib/batchWrite').prototype);
 
 var dynogels_model = dynogels.model;
 dynogels.model = function(name, model){
